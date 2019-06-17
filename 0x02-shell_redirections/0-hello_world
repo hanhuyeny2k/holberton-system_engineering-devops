@@ -1,1 +1,2 @@
-Hello, World, ls  
+#!/bin/bash
+echo -e "Hello, World" 
