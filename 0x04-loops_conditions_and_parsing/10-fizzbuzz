@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#display numbers from 1 to 100. Displays FizzBuzz when the number is a multiple of 3 and 5, Fizz when the number is multiple of 3, Buzz when the number is a multiple of 5, otherwise displays the number.
+
+a=1
+while [ $a -lt 101 ]
+do
+	if [ $((a % 15)) == 0 ]
+	then
+		echo "FizzBuzz"
+	elif [ $((a % 3)) == 0 ]
+	then
+		echo "Fizz"
+	elif [ $((a % 5)) == 0 ]
+	then
+		echo "Buzz"
+	else 
+		echo $a
+	fi
+	a=$((a + 1))
+done
