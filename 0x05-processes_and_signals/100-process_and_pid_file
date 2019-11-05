@@ -3,9 +3,9 @@
 
 file=/var/run/holbertonscript.pid
 touch $file
-trap "echo I hate the kill command; rm -f '$file'" SIGTERM
+trap 'echo I hate the kill command; rm -f $file' SIGTERM
 trap "echo Y U no love me?!" SIGINT
-trap "rm -f '$file'; exit" SIGQUIT
+trap 'rm -f '$file'; exit' SIGQUIT
 
 while :
 do
