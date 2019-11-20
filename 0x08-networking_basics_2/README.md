@@ -10,6 +10,9 @@
 * The first line of all the Bash scripts should be exactly #!/usr/bin/env bash
 * The second line of all the Bash scripts should be a comment explaining what is the script doing
 
+## More info
+* For multiple choice question type tasks, just type the number of the correct answer in the answer file.
+
 ## Compilation and Execution
 `$ chmod u+x <filename>`
 
@@ -25,7 +28,7 @@ $ ./3-show_attached_IPs | cat -e
 1) What is localhost?
 2) What is 0.0.0.0?
 3) Write a Bash script that configures an Ubuntu server with the below requirements.
-	- Requirements:
+	* Requirements:
 		-localhost resolves to 127.0.0.2
 		-facebook.com resolves to 8.8.8.8.
 		-The checker is running on Docker, so make sure to read this
