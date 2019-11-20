@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#configure an Ubuntu server with localhost and facebook.com resolve to different
+#ip address
+a=$(mktemp)
+printf "%s\t%s\n" "127.0.0.2" "localhost" "8.8.8.8" "facebook.com" >> "$a"
+cat /etc/hosts >> "$a"
+chmod --reference=/etc/hosts "$a"
+mv "$a" /etc/hosts
