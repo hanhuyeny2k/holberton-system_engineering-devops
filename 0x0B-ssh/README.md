@@ -12,9 +12,9 @@
 ## Executing
 `$ chmod u+x <filename>`
 ## My Servers
-| Name       | Username | IP |
-| ------     | -------- |
-| 862-web-01 | ubuntu   | 35.237.78.35 |
+| Name         | Username | IP           |
+| :------:     | -------- | ----         |
+| 862-web-01   | ubuntu   | 35.237.78.35 |
 
 ## Example
 ```
