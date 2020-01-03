@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Install your load balancer
 
-apt-get install software-properties-common
-add-apt-repository ppa:vbernat/haproxy-1.8
+apt-get install -y software-properties-common
+add-apt-repository -y ppa:vbernat/haproxy-1.8
 apt-get update
-apt-get install haproxy=1.8.\*
+apt-get install -y haproxy=1.8.\*
 
 echo "
 frontend http
