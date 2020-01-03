@@ -15,3 +15,4 @@ backend web-backend
         balance roundrobin
         server 862-web-01 34.73.160.183 check
         server 862-web-02 35.229.117.227 check" >> /etc/haproxy/haproxy.cfg
+service haproxy restart
