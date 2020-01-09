@@ -1,3 +1,4 @@
+sudo apt-get install ufw
 sudo ufw allow from 34.73.160.183 to any port 22
 sudo ufw allow from 34.73.160.183 to any port 443
 sudo ufw allow from 34.73.160.183 to any port 80
