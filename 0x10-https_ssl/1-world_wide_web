@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# display information about subdomains
+subdomain=(www lb-01 web-01 web-02)
+if [ "$#" -gt 1 ]
+then
+        awko=$(dig "$2.$1" | grep -A1 'ANSWER SECTION:' | awk '{getline; print $4 " "  $5}')
+        awkk=($awko)
+        echo "The subdomain $2 is a ${awkk[0]} record and points to ${awkk[1]}"
+else
+	for i in "${subdomain[@]}"
+	do
+		awko=$(dig "$i.$1" | grep -A1 'ANSWER SECTION:' | awk '{getline; print $4 " " $5}')
+		awkk=($awko)
+		echo "The subdomain $i is a ${awkk[0]} record and points to ${awkk[1]}"
+	done
+fi
