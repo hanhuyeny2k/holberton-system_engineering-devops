@@ -2,4 +2,4 @@
 #MySQL backup
 
 mysqldump -u root -p "$1" --master-data --all-databases > backup.sql
-tar -zcvf $(date '+%d-%m-%Y').tar.gz backup.sql
+tar -zcvf "$(date '+%d-%m-%Y').tar.gz" backup.sql
