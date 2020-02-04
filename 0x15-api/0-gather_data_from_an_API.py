@@ -20,7 +20,7 @@ for todo_user in users.json():
                 t.append(q)
             if todo_list['userId'] == int(sys.argv[1]):
                 TOTAL_OF_TASKS_DONE += 1
-            TODO = "Employee {} is done with tasks({}/{})"\
+            TODO = "Employee {} is done with tasks({}/{}):"\
                 .format(todo_user['name'],
                         NUMBER_OF_DONE_TASKS, TOTAL_OF_TASKS_DONE)
         print(TODO)
